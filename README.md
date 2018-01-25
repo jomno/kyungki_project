@@ -26,35 +26,44 @@ active admin 사용
 
 # DBSchema
 ### City
-
+지역구 정보
 | 컬럼명   | 형식     | 비고    |
 | ----- | ------ | ----- |
 | title | string | index |
 
 ### District
-
+주소 정보
 | 컬럼명     | 형식      | 비고    |
 | ------- | ------- | ----- |
 | title   | string  | index |
 | city_id | integer |       |
 
 ### User
-
+선거인단 정보
 | 컬럼명         | 형식      | 비고        |
 | ----------- | ------- | --------- |
 | name        | string  |           |
 | district_id | integer |           |
 | phone       | string  |           |
+| address       | string  |           |
 | birth       | integer | 주민번호 앞 6개 |
 
 ### Post
-
+공지사항
 | 컬럼명     | 형식     | 비고    |
 | ------- | ------ | ----- |
 | title   | string | index |
 | content | text   |       |
-# TO-DO
+# 작업 순서
 1. 모델 구성
 2. admin 페이지 구성
 3. 선거인단 등록 페이지 구성
 4. 선거인단 확인 페이지 구성
+
+# 바꿔야할거
+1. 선거인단 등록 페이지 select2 적용(검색 가능하게)
+2. 전체적인 디자인 수정
+3. 선거인단 확인 페이지-> 가입 현황
+4. 선거인단 확인 페이지-> 지역구 현황
+5. 선거인단 확인 페이지-> 공지사항
+6. 데이터 집어넣기

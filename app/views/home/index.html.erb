@@ -1,0 +1,57 @@
+<header>
+  <h1>경기 자치 포럼</h1>
+</header>
+<nav>
+  <ul>
+    <li>
+      <a href="">
+        <!-- <i class="fa fa-home"></i> -->
+        가입 현황</a>
+    </li>
+    <li>
+      <a href="">
+        <!-- <i class="fa fa-info"></i> -->
+        지역구 현황</a>
+    </li>
+    <li>
+      <a href="">
+        <!-- <i class="fa fa-inbox"></i> -->
+        공지사항
+      </a>
+    </li>
+  </ul>
+  <div class="handle">
+    Menu
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <% @users.each do |user| %>
+      <div class="col-md-4">
+        <div class="card card-blog">
+          <div class="card-content">
+            <div class="row">
+              <div class="col-sm-6"><h6 class="category text-info"><%= user.district.city.title%></h6></div>
+              <div class="col-sm-6"><h6 class="category text-danger text-right"><%= time_ago_in_words(user.created_at)%></h6></div>
+            </div>
+
+            <h4 class="card-title">
+              <a href="#pablo"><%= user.name%> 회원님</a>
+            </h4>
+            <p class="card-description text-default">
+              <%= user.id %>번째 가입
+              <!-- <a href="#pablo">
+                Read More
+              </a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<script>
+  $('.handle').on('click', function () {
+    $('nav ul').toggleClass('showing');
+  });
+</script>
