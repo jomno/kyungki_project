@@ -53,3 +53,8 @@ active admin 사용
 | ------- | ------ | ----- |
 | title   | string | index |
 | content | text   |       |
+# TO-DO
+1. 모델 구성
+2. admin 페이지 구성
+3. 선거인단 등록 페이지 구성
+4. 선거인단 확인 페이지 구성
