@@ -27,12 +27,14 @@ active admin 사용
 # DBSchema
 ### City
 지역구 정보
+
 | 컬럼명   | 형식     | 비고    |
 | ----- | ------ | ----- |
 | title | string | index |
 
 ### District
 주소 정보
+
 | 컬럼명     | 형식      | 비고    |
 | ------- | ------- | ----- |
 | title   | string  | index |
@@ -40,6 +42,7 @@ active admin 사용
 
 ### User
 선거인단 정보
+
 | 컬럼명         | 형식      | 비고        |
 | ----------- | ------- | --------- |
 | name        | string  |           |
@@ -50,6 +53,7 @@ active admin 사용
 
 ### Post
 공지사항
+
 | 컬럼명     | 형식     | 비고    |
 | ------- | ------ | ----- |
 | title   | string | index |
