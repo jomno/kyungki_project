@@ -2308,9 +2308,9 @@ fieldset[disabled]
     margin-top: -11px;
 }
 
-.form-group select {
+/* .form-group select {
     appearance: none;
-}
+} */
 
 .form-group select ~ .material-input:after {
     display: none;
@@ -4433,7 +4433,7 @@ h2.title {
 }
 
 .card-blog .card-title {
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .card-blog .card-image + .category {
@@ -5383,7 +5383,7 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
     vertical-align: middle;
     width: 100% !important;
 }
-
+/*
 .select2-container .select2-selection--single {
     box-sizing: border-box;
     cursor: pointer;
@@ -6093,7 +6093,7 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
 
 .select2-container--classic.select2-container--open .select2-dropdown {
     border-color: #5897fb;
-}
+} */
 
 /*
  * bootstrap-tagsinput v0.8.0
@@ -6672,7 +6672,7 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
 }
 
 .page-header .container {
-    padding-top: 226px;
+    padding-top: 70px;
     color: #FFFFFF;
 }
 

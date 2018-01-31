@@ -1,0 +1,36 @@
+<%= render 'menu' %>
+<div class="container">
+  <div class="row">
+    <% @users.each do |user| %>
+    <div class="col-xs-12 col-md-4">
+      <div class="card card-blog">
+        <div class="card-body">
+          <h6 class="card-category text-info"><%= user.district.city.title%></h6>
+          <h5 class="card-title">
+            <a href="#<%= user.id%>"><%= user.name%>
+              회원님</a>
+          </h5>
+          <hr>
+          <div class="card-footer">
+            <div class="author">
+              <a href="#pablo">
+                <i class="fa fa-users"></i>
+                <span><%= user.id %>번째 가입</span>
+              </a>
+            </div>
+            <div class="stats">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <%= time_ago_in_words(user.created_at)%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+<script>
+  $('.handle').on('click', function () {
+    $('nav ul').toggleClass('showing');
+  });
+</script>

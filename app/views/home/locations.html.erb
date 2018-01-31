@@ -1,0 +1,42 @@
+<%= render 'menu' %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 ml-auto mr-auto">
+      <h4 class="title">지역구별 순위</h4>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="text-center">#</th>
+              <th class="text-center">지역구</th>
+              <th>명</th>
+              <th>최근 등록</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @districts.each_with_index do |d,index| %>
+            <tr>
+
+              <td class="text-center"><label class="label label-info"><%=index +1%></label></td>
+              <td><a href="/home/users?id=<%=d.id%>"><%= truncate(d.title,length: 12) %></a></td>
+              <td class="text-center"><%= d.users.count %></td>
+              <td><%= time_ago_in_words(d.users.last.created_at)%></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <%# @users.each do |user| %>
+      <!-- <div class="col-md-4"> <div class="card card-blog"> <div class="card-content"> <div class="row"> <div class="col-xs-6"><label class="label label-danger" style="font-size: 20px;">1위</label></div> <div class="col-xs-6"><h4 class="category
+      text-info text-right" style="margin-top: -10px;">안양시 민원구</h6></div> </div> <div class="row"> <div class="col-xs-6"> <h4 class="card-title"> <a href="#pablo">67명</a> </h4> </div> <div class="col-xs-6"> <p class="card-title text-right"> 3일 전 </p>
+      </div> </div> </div> </div> </div> -->
+      <%# end %>
+      </div>
+    </div>
+    <script>
+      $('.handle').on('click', function () {
+        $('nav ul').toggleClass('showing');
+      });
+    </script>

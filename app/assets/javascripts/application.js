@@ -11,3 +11,9 @@
 // about supported directives.
 //
 //= require jquery
+// = require select2
+$(document).ready(function() {
+  $('.location-select').select2({
+      placeholder: "지역을 선택해주세요."
+  });
+});
