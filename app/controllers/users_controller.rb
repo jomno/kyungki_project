@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 
   def index
     if cookies[:status] == "success"
-      @msg = "선거인단 등록해주셔서 감사합니다."
+      @msg = "포럼 가족이 되심을 축하드립니다."
     else
       redirect_to "/users/new"
     end

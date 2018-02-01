@@ -6705,7 +6705,7 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
 }
 
 .header-filter::before {
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .header-filter .container {
@@ -6714,16 +6714,17 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
 }
 
 .header-filter[filter-color="purple"]:after, .header-filter[filter-color="primary"]:after {
-    background: rgba(225, 190, 231, 0.56);
+    /* background: rgba(225, 190, 231, 0.56); */
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(60deg, rgba(225, 190, 231, 0.56), rgba(186, 104, 200, 0.95));
+    /* background: -webkit-linear-gradient(60deg, rgba(225, 190, 231, 0.56), rgba(186, 104, 200, 0.95)); */
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(60deg, rgba(225, 190, 231, 0.56), rgba(186, 104, 200, 0.95));
+    /* background: -o-linear-gradient(60deg, rgba(225, 190, 231, 0.56), rgba(186, 104, 200, 0.95)); */
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(60deg, rgba(225, 190, 231, 0.56), rgba(186, 104, 200, 0.95));
+    /* background: -moz-linear-gradient(60deg, rgba(225, 190, 231, 0.56), rgba(186, 104, 200, 0.95)); */
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(60deg, rgba(225, 190, 231, 0.56), rgba(186, 104, 200, 0.95));
+    /* background: linear-gradient(60deg, rgba(225, 190, 231, 0.56), rgba(186, 104, 200, 0.95)); */
     /* Standard syntax */
+
 }
 
 .header-filter[filter-color="blue"]:after, .header-filter[filter-color="info"]:after {

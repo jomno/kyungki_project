@@ -1,27 +1,34 @@
 <%= render 'menu' %>
-<div class="container">
+<div class="container main">
   <div class="row">
     <div class="title">
       <h3>공지사항</h3>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div id="acordeon">
+        <div id="acordeon" style="margin-left: 10px;margin-right: 10px;">
           <div id="accordion" role="tablist" aria-multiselectable="true">
             <div class="card">
-              <% @posts.each do |post| %>
+              <% @posts.each_with_index do |post,index| %>
                 <div class="card-header card-collapse" role="tab" id="heading<%=post.id%>">
                   <h5 class="mb-0 panel-title">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse<%=post.id%>" aria-expanded="false" aria-controls="collapse<%=post.id%>">
-                      <%= post.title%>
+                      <div class="row">
+                        <div class="col-xs-6"><%= post.title%></div>
+                        <div class="col-xs-6 text-right" style="font-size:12px;"><%= time_ago_in_words(post.created_at)%></div>
+                      </div>
                       <i class="nc-icon nc-minimal-down"></i>
                     </a>
                   </h5>
                 </div>
-                <div id="collapse<%=post.id%>" class="collapse" role="tabpanel" aria-labelledby="heading<%=post.id%>">
+                <% if(index==0) %>
+                  <div id="collapse<%=post.id%>" class="collapse show" role="tabpanel" aria-labelledby="heading<%=post.id%>">
+                <% else %>
+                  <div id="collapse<%=post.id%>" class="collapse" role="tabpanel" aria-labelledby="heading<%=post.id%>">
+                <% end %>
                   <div class="card-body">
                     <%=post.content%>
-                    <p class="text-right"><%= time_ago_in_words(post.created_at)%></p>
+                    <p class="text-right"></p>
                   </div>
                 </div>
               <% end %>

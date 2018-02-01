@@ -17,13 +17,13 @@ class HomeController < ApplicationController
   end
   def users
     if params[:id]
-      @users = District.find(params[:id]).users
+      @users = User.where(id: City.find(params[:id]).user_ids).order(created_at: :DESC)
     else
       @users = User.all.order(created_at: :DESC)
     end
   end
   def locations
-    @districts = District.exist_user
+    @city_hash = City.exist_user
   end
 
   def posts
