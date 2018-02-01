@@ -531,8 +531,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .btn-danger {
-  background-color: #f5593d;
-  border-color: #f5593d;
+  background-color: #004dff;
+  border-color: #004dff;
   color: #FFFFFF;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -8684,7 +8684,7 @@ a.pswp__share--download:hover {
   height: 110px;
 }
 .card.card-register {
-  background-color: #FF8F5E;
+  background-color: #26e6ff;
   border-radius: 8px;
   color: #fff;
   max-width: 350px;
@@ -8696,7 +8696,7 @@ a.pswp__share--download:hover {
   margin-top: 15px;
 }
 .card.card-register .card-title {
-  color: #B33C12;
+  color: black;
   text-align: center;
 }
 .card.card-register .btn {
@@ -8853,6 +8853,7 @@ a.pswp__share--download:hover {
   padding: 30px 0 0;
 }
 .card .card-body {
+  background-color: #e7f5f2;
   padding: 20px;
 }
 .card .card-body .card-title {

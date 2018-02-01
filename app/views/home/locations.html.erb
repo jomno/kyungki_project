@@ -1,5 +1,5 @@
 <%= render 'menu' %>
-<div class="container">
+<div class="container main">
   <div class="row">
     <div class="col-md-12 ml-auto mr-auto">
       <h4 class="title">지역구별 순위</h4>
@@ -14,13 +14,12 @@
             </tr>
           </thead>
           <tbody>
-            <% @districts.each_with_index do |d,index| %>
+            <% @city_hash.each_with_index do |(k,v),index| %>
             <tr>
-
               <td class="text-center"><label class="label label-info"><%=index +1%></label></td>
-              <td><a href="/home/users?id=<%=d.id%>"><%= truncate(d.title,length: 12) %></a></td>
-              <td class="text-center"><%= d.users.count %></td>
-              <td><%= time_ago_in_words(d.users.last.created_at)%></td>
+              <td><a href="/home/users?id=<%=k%>"><%= truncate(City.find(k).title,length: 12) %></a></td>
+              <td class="text-center"><%= v %></td>
+              <td><%= time_ago_in_words(City.find(k).districts.exist_user.last.created_at)%></td>
             </tr>
             <% end %>
           </tbody>

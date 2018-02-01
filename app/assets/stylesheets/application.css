@@ -13,3 +13,7 @@
  *= require_self
  *= require select2
  */
+.main {
+    display: block;
+    padding-top: 200px;
+}
