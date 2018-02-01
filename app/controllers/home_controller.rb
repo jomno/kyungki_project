@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   def index
     # reset_session
     if user_signed_in?
-      redirect_to "home/users"
+      redirect_to "/home/users"
     else
     end
   end
