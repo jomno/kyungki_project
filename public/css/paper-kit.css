@@ -6037,6 +6037,7 @@ video {
 
 .card-collapse {
   padding: 0 !important;
+  border: 1px solid black;
 }
 
 .panel-title a[aria-expanded="true"] i {
