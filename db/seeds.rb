@@ -1,7 +1,4 @@
-AdminUser.create!([
-  {email: "admin@admin.com", encrypted_password: "$2a$11$/SiI12ibzAxt37I5EDJ.A.7RvkdXyWvhjz29esNNy6sHxym3WFLT6", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 8, current_sign_in_at: "2018-03-02 05:01:32", last_sign_in_at: "2018-02-27 08:40:09", current_sign_in_ip: "61.102.114.205", last_sign_in_ip: "175.223.38.27"},
-  {email: "super@admin.com", encrypted_password: "$2a$11$2zsexrErIFNrd3301mASzuDeKuSsnPKmMJemAcnN/m.1aemWF7.96", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2018-02-02 01:36:33", last_sign_in_at: "2018-02-02 01:36:33", current_sign_in_ip: "123.215.120.144", last_sign_in_ip: "123.215.120.144"}
-])
+AdminUser.create!(email: 'admin@admin.com', password: 'password', password_confirmation: 'password')
 City.create!([
   {title: "수원시 갑"},
   {title: "수원시 을"},
@@ -64,47 +61,7 @@ City.create!([
   {title: "포천시-가평군"},
   {title: "여주시-양평군"}
 ])
-User.create!([
-  {name: "김용균테스트", district_id: 112, phone: "01063271593", birth: 710615, address: "1111-1"},
-  {name: "홍길동 ", district_id: 229, phone: "01089563278", birth: 750491, address: "18227"},
-  {name: "김연아", district_id: 4, phone: "01023451245", birth: 725840, address: "1232-7"},
-  {name: "정우성", district_id: 112, phone: "010456781234", birth: 784127, address: "1526374"},
-  {name: "이선영", district_id: 19, phone: "31223213", birth: 3213213, address: "32132"},
-  {name: "노종원", district_id: 248, phone: "010-3511-5502", birth: 920802, address: "224-6"},
-  {name: "고아라", district_id: 4, phone: "01039752484", birth: 758404, address: "182282"},
-  {name: "배범수", district_id: 1, phone: "010-6309-1460", birth: 740520, address: "ㅇㅇㅇ"},
-  {name: "오가영", district_id: 179, phone: "01097572928", birth: 771008, address: "하늘마을 102-1801"},
-  {name: "오가영", district_id: 179, phone: "01097572928", birth: 771008, address: "하늘마을 102-1801"},
-  {name: "김종국", district_id: 204, phone: "01073376225", birth: 690212, address: "998"},
-  {name: "윤종암", district_id: 82, phone: "01062112530", birth: 610614, address: "가평군 청평면 경춘로722"},
-  {name: "이덕녀", district_id: 196, phone: "01053932174", birth: 601002, address: "수택동 347-10"},
-  {name: "윤종암", district_id: 82, phone: "01062112530", birth: 610614, address: "가평군 청평면 경춘로722"},
-  {name: "박성원", district_id: 196, phone: "01039552739", birth: 900309, address: "인창동 주공 @608동 1202호"},
-  {name: "조석주", district_id: 206, phone: "010-3366-1745", birth: 730119, address: "진건오남로 369-1"},
-  {name: "김시현", district_id: 303, phone: "", birth: 1088644351, address: "신영통 현대아파트 111동 1403호"},
-  {name: "김시현", district_id: 303, phone: "", birth: 1088644351, address: "신영통 현대아파트 111동 1403호"},
-  {name: "김용균", district_id: 231, phone: "01063271593", birth: 710615, address: "부곡동 1214-6"},
-  {name: "진성화", district_id: 203, phone: "01089724848", birth: 630620, address: "청학리 주공아파트711동101호 "},
-  {name: "김수기", district_id: 17, phone: "01076454045", birth: 580415, address: "화서1동  82-21"},
-  {name: "백수근", district_id: 17, phone: "01033639630", birth: 620202, address: "팔달로 165번길 39 102동 505호(화서동, 벽산아파트)"},
-  {name: "유순채", district_id: 72, phone: "", birth: 540620, address: ""},
-  {name: "김영짐", district_id: 1, phone: "010-2420-7663", birth: 820712, address: ""},
-  {name: "박현환", district_id: 30, phone: "010-6297-4911", birth: 590717, address: "벽산한성아파트"},
-  {name: "이기현", district_id: 84, phone: "010-5789-9545", birth: 901028, address: "1097-5번지 201호"},
-  {name: "유지하", district_id: 204, phone: "01020340579", birth: 800517, address: "한화아파트"},
-  {name: "강현철", district_id: 2, phone: "01099024814", birth: 551005, address: "1202-402"},
-  {name: "백경하", district_id: 17, phone: "010-5020-9630", birth: 960215, address: "화서동 화서벽산아파트 102동 505호"},
-  {name: "백준하", district_id: 17, phone: "010-6520-9630", birth: 980211, address: "화서동 화서벽산아파트 102동 505호"},
-  {name: "백민하", district_id: 17, phone: "010-4202-9630", birth: 990225, address: "화서동 화서벽산아파트 102동 505호"},
-  {name: "천광필", district_id: 253, phone: "01087024630", birth: 671008, address: "백현주공7단지 2710동 1401호"},
-  {name: "천광필", district_id: 253, phone: "01087024630", birth: 671008, address: "백현주공7단지 2710동 1401호"},
-  {name: "이종수", district_id: 316, phone: "01045769935", birth: 670429, address: "고암길 조은마을 606-1403"},
-  {name: "김요홧", district_id: 2, phone: "01067277747", birth: 760729, address: ""},
-  {name: "김경자", district_id: 2, phone: "01081930225", birth: 440207, address: ""},
-  {name: "김경자", district_id: 2, phone: "01081930225", birth: 440207, address: ""},
-  {name: "박형암", district_id: 204, phone: "01052870331", birth: 571008, address: "별내3로 4505동205호(우미린아파트)"},
-  {name: "이일상", district_id: 200, phone: "010-9689-1043", birth: 581003, address: "593-1 리투안 301호"}
-])
+
 Post.create!([
   {title: "테스트", content: "테스트"},
   {title: "2018년 2월 일정", content: "공지사항으로 모두에게 공개되는 2018년 2월 이후 포럼 일정입니다."}
@@ -430,4 +387,41 @@ District.create!([
   {title: "가평군", city_id: 59},
   {title: "여주시", city_id: 60},
   {title: "양평군", city_id: 60}
+])
+User.create!([
+  {name: "김용균테스트", district_id: 112, phone: "01063271593", birth: 710615, address: "1111-1"},
+  {name: "홍길동 ", district_id: 229, phone: "01089563278", birth: 750491, address: "18227"},
+  {name: "김연아", district_id: 4, phone: "01023451245", birth: 725840, address: "1232-7"},
+  {name: "정우성", district_id: 112, phone: "010456781234", birth: 784127, address: "1526374"},
+  {name: "이선영", district_id: 19, phone: "31223213", birth: 3213213, address: "32132"},
+  {name: "노종원", district_id: 248, phone: "010-3511-5502", birth: 920802, address: "224-6"},
+  {name: "고아라", district_id: 4, phone: "01039752484", birth: 758404, address: "182282"},
+  {name: "배범수", district_id: 1, phone: "010-6309-1460", birth: 740520, address: "ㅇㅇㅇ"},
+  {name: "오가영", district_id: 179, phone: "01097572928", birth: 771008, address: "하늘마을 102-1801"},
+  {name: "오가영", district_id: 179, phone: "01097572928", birth: 771008, address: "하늘마을 102-1801"},
+  {name: "김종국", district_id: 204, phone: "01073376225", birth: 690212, address: "998"},
+  {name: "윤종암", district_id: 82, phone: "01062112530", birth: 610614, address: "가평군 청평면 경춘로722"},
+  {name: "이덕녀", district_id: 196, phone: "01053932174", birth: 601002, address: "수택동 347-10"},
+  {name: "윤종암", district_id: 82, phone: "01062112530", birth: 610614, address: "가평군 청평면 경춘로722"},
+  {name: "박성원", district_id: 196, phone: "01039552739", birth: 900309, address: "인창동 주공 @608동 1202호"},
+  {name: "조석주", district_id: 206, phone: "010-3366-1745", birth: 730119, address: "진건오남로 369-1"},
+  {name: "김용균", district_id: 231, phone: "01063271593", birth: 710615, address: "부곡동 1214-6"},
+  {name: "진성화", district_id: 203, phone: "01089724848", birth: 630620, address: "청학리 주공아파트711동101호 "},
+  {name: "김수기", district_id: 17, phone: "01076454045", birth: 580415, address: "화서1동  82-21"},
+  {name: "백수근", district_id: 17, phone: "01033639630", birth: 620202, address: "팔달로 165번길 39 102동 505호(화서동, 벽산아파트)"},
+  {name: "김영짐", district_id: 1, phone: "010-2420-7663", birth: 820712, address: ""},
+  {name: "박현환", district_id: 30, phone: "010-6297-4911", birth: 590717, address: "벽산한성아파트"},
+  {name: "이기현", district_id: 84, phone: "010-5789-9545", birth: 901028, address: "1097-5번지 201호"},
+  {name: "유지하", district_id: 204, phone: "01020340579", birth: 800517, address: "한화아파트"},
+  {name: "강현철", district_id: 2, phone: "01099024814", birth: 551005, address: "1202-402"},
+  {name: "백경하", district_id: 17, phone: "010-5020-9630", birth: 960215, address: "화서동 화서벽산아파트 102동 505호"},
+  {name: "백준하", district_id: 17, phone: "010-6520-9630", birth: 980211, address: "화서동 화서벽산아파트 102동 505호"},
+  {name: "백민하", district_id: 17, phone: "010-4202-9630", birth: 990225, address: "화서동 화서벽산아파트 102동 505호"},
+  {name: "천광필", district_id: 253, phone: "01087024630", birth: 671008, address: "백현주공7단지 2710동 1401호"},
+  {name: "천광필", district_id: 253, phone: "01087024630", birth: 671008, address: "백현주공7단지 2710동 1401호"},
+  {name: "이종수", district_id: 316, phone: "01045769935", birth: 670429, address: "고암길 조은마을 606-1403"},
+  {name: "김요홧", district_id: 2, phone: "01067277747", birth: 760729, address: ""},
+  {name: "김경자", district_id: 2, phone: "01081930225", birth: 440207, address: ""},
+  {name: "박형암", district_id: 204, phone: "01052870331", birth: 571008, address: "별내3로 4505동205호(우미린아파트)"},
+  {name: "이일상", district_id: 200, phone: "010-9689-1043", birth: 581003, address: "593-1 리투안 301호"}
 ])

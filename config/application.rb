@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Kyungki
   class Application < Rails::Application
-    config.i18n.default_locale = :ko
+    config.i18n.default_locale = :en
     config.time_zone = 'Seoul'
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
